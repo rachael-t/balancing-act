@@ -1,0 +1,64 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: red; /* using red as visual guide to start */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-bottom: 80px;
+  position: absolute;
+  top: 10px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1, main {
+  margin-left: 90px;
+  padding: 10px;
+}
+
+.cards {
+  border: 1px solid black;
+  width: 120px;
+  margin: 10px 10px;
+  display: inline-block;
+}
+
+.title {
+  display: inline-block;
+}
+
+.account-card {
+  border: 1px solid black;
+  width: 400px;
+  margin: 10px 10px;
+}
+
+.account-icon {
+  width: 30px;
+  height: 30px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions {
+  float: right;
+}
