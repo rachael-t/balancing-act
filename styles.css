@@ -40,8 +40,18 @@ nav {
 #welcome-banner {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   margin: 0px 0px 0px 0px;
+  padding: 10px 20px 10px 20px;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
+  position: relative;
+}
+
+.close-box {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 main {
@@ -114,5 +124,5 @@ button {
   text-transform: uppercase;
   font-family: 'Biryani', sans-serif;
   text-align: justify;
-  border-radius: 50px;
+  border-radius: 12px;
 }
