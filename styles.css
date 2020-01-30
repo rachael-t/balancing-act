@@ -58,6 +58,7 @@ main {
   margin-left: 90px;
   padding: 10px;
   position: relative;
+  width: 90%;
 }
 
 header {
@@ -95,9 +96,16 @@ th, td {
   border-bottom: 1px solid #CCCCCC;
 }
 
+table {
+  border-spacing: 0px;
+}
+
 .overview {
   display: inline-block;
   vertical-align: top;
+  width: 47%;
+  margin-left: 1%;
+  margin-right: 5%;
 }
 
 .transactions {
@@ -107,6 +115,7 @@ th, td {
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
   vertical-align: top;
+  width: 47%;
 }
 
 .card-title, .card-amount {
