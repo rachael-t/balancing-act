@@ -1,10 +1,19 @@
+html, body {
+  font-family: 'Biryani', sans-serif;
+  background-color: #F5F5F5;
+}
+
+p, h2, th {
+  color: #363636;
+}
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 80px;
   height: 100%;
-  background: red; /* using red as visual guide to start */
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,16 +37,31 @@ nav {
   margin-bottom: 10px;
 }
 
-h1, main {
+#welcome-banner {
+  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  margin: 0px 0px 0px 0px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+
+main {
+  margin-left: 90px;
+  padding: 10px;
+  position: relative;
+}
+
+header {
   margin-left: 90px;
   padding: 10px;
 }
 
 .cards {
-  border: 1px solid black;
   width: 120px;
   margin: 10px 10px;
   display: inline-block;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  border-radius: 3px;
 }
 
 .title {
@@ -45,9 +69,11 @@ h1, main {
 }
 
 .account-card {
-  border: 1px solid black;
   width: 400px;
   margin: 10px 10px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  border-radius: 3px;
 }
 
 .account-icon {
@@ -56,9 +82,37 @@ h1, main {
 }
 
 th, td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.overview {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .transactions {
-  float: right;
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  border-radius: 3px;
+  vertical-align: top;
+}
+
+.card-title, .card-amount {
+  padding-left: 8px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 10px;
+}
+
+button {
+  background-color: #1CA3BA;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Biryani', sans-serif;
+  text-align: justify;
+  border-radius: 50px;
 }
