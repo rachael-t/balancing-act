@@ -1,11 +1,14 @@
+/* style rules that apply to multiple sections */
 html, body {
   font-family: 'Biryani', sans-serif;
   background-color: #F5F5F5;
 }
 
-p, h2, th {
+p, h1, h2, th, td {
   color: #363636;
 }
+
+/* left-side navigation bar */
 
 nav {
   position: fixed;
@@ -14,42 +17,92 @@ nav {
   width: 80px;
   height: 100%;
   background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo {
   width: 75px;
   height: 75px;
-  display: block;
-  margin-bottom: 80px;
   position: absolute;
-  top: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 300px;
+  padding-inline-start: 0px;
+}
+
+li {
+  border-left: solid 6px transparent;
+}
+
+.highlight:hover {
+  border-left: solid 6px #1CA3BA;
 }
 
 .nav-icon {
   width: 40px;
   height: 40px;
-  display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 14px;
 }
 
-/* border left transparent then psuedo for hoover with it coming full */
+/* website header */
+
+header {
+  margin-left: 90px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.75em;
+  margin-left: 10px;
+  margin-bottom: 1px;
+}
+
+/* main page */
+
+main {
+  margin-left: 90px;
+  padding: 10px;
+  position: relative;
+  width: 90%;
+}
+
+button {
+  background-color: #1CA3BA;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Biryani', sans-serif;
+  text-align: justify;
+  border-radius: 12px;
+}
+
+/* left side section of main page */
+
+.overview {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin-left: 1%;
+  margin-right: 5%;
+}
+
+/* welcome banner */
 
 .welcome-banner {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 30px 0px;
   padding: 10px 20px 10px 10px;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
   position: relative;
 }
 
-h1 {
+h2 {
   margin-left: 10px;
+  font-size: 1.3em;
 }
 
 .close-box {
@@ -60,32 +113,55 @@ h1 {
   right: 15px;
 }
 
-main {
-  margin-left: 90px;
-  padding: 10px;
-  position: relative;
-  width: 90%;
-}
-
-header {
-  margin-left: 90px;
-  padding: 10px;
-}
+/* high-level overview cards */
 
 .overview-cards {
-  /* I learned this via this article: https://css-tricks.com/equidistant-objects-with-css/ */
-  display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
+  width: 100%
+  height: 100%;
 }
 
-.cards {
-  width: 30%;
+.income-card {
+  width: 29%;
+  margin-right: 5.5%;
   display: inline-block;
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
 }
+
+.expense-card {
+  width: 29%;
+  margin-right: 5.5%;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+
+.credit-card {
+  width: 29.5%;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+
+.card-title {
+  font-size: 11px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: -16px;
+  text-transform: uppercase;
+}
+
+.card-amount {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+/* account section */
 
 .account-titles {
   position: relative;
@@ -152,36 +228,7 @@ p.account-type {
   margin-right: 0%;
 }
 
-th, td {
-  border-bottom: 1px solid #CCCCCC;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-th {
-  text-align: left;
-}
-
-th.payee-column {
-  padding-right: 20%;
-}
-
-table {
-  border-spacing: 0px;
-  width: 90%;
-  margin-top: 13%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-}
-
-.overview {
-  display: inline-block;
-  vertical-align: top;
-  width: 47%;
-  margin-left: 1%;
-  margin-right: 5%;
-}
+/* right side section of main page */
 
 .transactions {
   display: inline-block;
@@ -220,23 +267,30 @@ table {
   font-size: 15px;
 }
 
-.card-title, .card-amount {
-  padding-left: 8px;
-  text-transform: uppercase;
+table {
+  border-spacing: 0px;
+  width: 90%;
+  margin-top: 13%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
-.card-title {
-  font-size: 10px;
+th, td {
+  border-bottom: 1px solid #CCCCCC;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-button {
-  background-color: #1CA3BA;
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Biryani', sans-serif;
-  text-align: justify;
-  border-radius: 12px;
+th {
+  text-align: left;
 }
+
+th.payee-column {
+  padding-right: 20%;
+}
+
+/* JS add-ons */
 
 .poof {
   display: none;
