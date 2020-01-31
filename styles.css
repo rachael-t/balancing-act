@@ -6,6 +6,7 @@ html, body {
 
 p, h1, h2, th, td {
   color: #363636;
+  font-weight: bold;
 }
 
 /* left-side navigation bar */
