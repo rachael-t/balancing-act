@@ -16,9 +16,9 @@
     </header>
     <main>
       <section class="overview">
-        <section id="welcome-banner">
+        <section class="welcome-banner">
           <h1>Welcome, Oscar!</h1>
-          <img class="close-box" src="/Users/rachaelthomas/turing/1module/balancing-act/assets/close.svg" alt="Close box with an X" />
+          <input type="image" class="close-box" src="/Users/rachaelthomas/turing/1module/balancing-act/assets/close.svg" alt="Close box with an X" />
         </section>
         <section class="overview-cards">
           <div class="cards">
@@ -34,38 +34,42 @@
             <p class="card-amount">673</p>
           </div>
         </section>
-        <section class="accounts">
-          <h2 class="title">Accounts</h2>
-          <button class="title">Manage Accounts</button>
+          <section class="accounts">
+            <div class="account-titles">
+              <h2 class="title-name">Accounts</h2>
+              <button class="title-button">Manage Accounts</button>
+            </div>
           <div class="account-card">
             <img class="account-icon" src="/Users/rachaelthomas/turing/1module/balancing-act/assets/checking.svg" alt="Pen writing in checkbox icon"/>
-            <p>Wells Fargo</p>
-            <p>Checking</p>
+            <p class="account-name">Wells Fargo</p>
+            <p class="account-type">Checking</p>
           </div>
           <div class="account-card">
             <img class="account-icon" src="/Users/rachaelthomas/turing/1module/balancing-act/assets/savings.svg" alt="Piggy bank with coin icon"/>
-            <p>Wells Fargo</p>
-            <p>Savings</p>
+            <p class="account-name">Wells Fargo</p>
+            <p class="account-type">Savings</p>
           </div>
           <div class="account-card">
             <img class="account-icon" src="/Users/rachaelthomas/turing/1module/balancing-act/assets/credit-card.svg" alt="Credit card icon"/>
-            <p>Amazon Credit</p>
-            <p>Credit Card</p>
+            <p class="account-name">Amazon Credit</p>
+            <p class="account-type">Credit Card</p>
           </div>
           <div class="account-card">
             <img class="account-icon" src="/Users/rachaelthomas/turing/1module/balancing-act/assets/credit-card.svg" alt="Credit card icon"/>
-            <p>Southwest Credit</p>
-            <p>Credit Card</p>
+            <p class="account-name">Southwest Credit</p>
+            <p class="account-type">Credit Card</p>
           </div>
         </section>
       </section>
       <section class="transactions">
-        <h2 class= "title">Recent Transactions</h2>
-        <button class= "title">New Transactions</button>
+        <div class="transactions-titles">
+          <h2 class= "transactions-name">Recent Transactions</h2>
+          <button class= "new-transaction-button">New Transaction</button>
+        </div>
         <table>
           <tr>
             <th>Date</th>
-            <th>Payee</th>
+            <th class="payee-column">Payee</th>
             <th>Inflow</th>
             <th>Outflow</th>
           </tr>
@@ -125,5 +129,6 @@
           </tr>
         </section>
     </main>
+    <script src="main.js"> </script>
   </body>
 </html>

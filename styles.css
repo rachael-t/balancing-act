@@ -37,13 +37,19 @@ nav {
   margin-bottom: 10px;
 }
 
-#welcome-banner {
+/* border left transparent then psuedo for hoover with it coming full */
+
+.welcome-banner {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   margin: 0px 0px 0px 0px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 10px;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
   position: relative;
+}
+
+h1 {
+  margin-left: 10px;
 }
 
 .close-box {
@@ -66,38 +72,107 @@ header {
   padding: 10px;
 }
 
+.overview-cards {
+  /* I learned this via this article: https://css-tricks.com/equidistant-objects-with-css/ */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
 .cards {
-  width: 120px;
-  margin: 10px 10px;
+  width: 30%;
   display: inline-block;
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
 }
 
-.title {
+.account-titles {
+  position: relative;
+  width: 100%;
+  height: 12%;
+}
+
+.title-name {
   display: inline-block;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 0%;
+  margin-bottom: 1%;
+  margin-right: 0%;
+}
+
+.title-button {
+  display: inline-block;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 72%;
+  margin-bottom: 1%;
+  margin-right: 0%;
+  font-size: 15px;
 }
 
 .account-card {
-  width: 400px;
-  margin: 10px 10px;
+  width: 100%;
+  height: 9%;
+  margin-bottom: 20px;
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
+  position: relative;
 }
 
 .account-icon {
-  width: 30px;
-  height: 30px;
+  width: 10%;
+  height: 45%;
+  margin-top: 3%;
+  margin-left: 0%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  position: absolute;
+}
+
+p.account-name, p.account-type {
+  display: inline-block;
+}
+
+p.account-name {
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  margin-right: 0%;
+}
+
+p.account-type {
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 75%;
+  margin-bottom: 2%;
+  margin-right: 0%;
 }
 
 th, td {
   border-bottom: 1px solid #CCCCCC;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+th {
+  text-align: left;
+}
+
+th.payee-column {
+  padding-right: 20%;
 }
 
 table {
   border-spacing: 0px;
+  width: 90%;
+  margin-top: 13%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
 .overview {
@@ -118,6 +193,33 @@ table {
   width: 47%;
 }
 
+.transactions-titles {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 10%;
+  width: 47%;
+  position: relative;
+}
+
+.transactions-name {
+  display: inline-block;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  margin-right: 0%;
+}
+
+.new-transaction-button {
+  display: inline-block;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 108%;
+  margin-bottom: 2%;
+  margin-right: 0%;
+  font-size: 15px;
+}
+
 .card-title, .card-amount {
   padding-left: 8px;
   text-transform: uppercase;
@@ -134,4 +236,8 @@ button {
   font-family: 'Biryani', sans-serif;
   text-align: justify;
   border-radius: 12px;
+}
+
+.poof {
+  display: none;
 }
