@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <title>Balancing Act</title>
@@ -8,20 +9,22 @@
     <nav>
       <img class="logo" src="assets/elephant.svg" alt="Elephant balancing ontop of blue ball"/>
       <ul>
-        <li class="highlight">
-          <img class="nav-icon" src="assets/dashboard.svg" alt="Clipboard icon with graph"/>
+        <!--Originally I had these just as img - with weekend 1-2 work I changed these to be input img for the 'click' option to integrate in JS-->
+        <li class="nav-dashboard highlight">
+          <input type="image" class="nav-icon-dashboard" src="assets/dashboard.svg" alt="Clipboard icon with graph"/>
         </li>
-        <li>
-          <img class="nav-icon" src="assets/transactions.svg" alt="Wallet icon with credit card sticking out"/>
+        <li class="nav-transactions highlight">
+          <input type="image" class="nav-icon-transactions" src="assets/transactions.svg" alt="Wallet icon with credit card sticking out"/>
         </li>
-        <li>
-          <img class="nav-icon" src="assets/profile.svg" alt="Profile of a girl icon"/>
+        <li class="nav-profile highlight">
+          <input type="image" class="nav-icon-profile" src="assets/profile.svg" alt="Profile of a girl icon"/>
         </li>
     </nav>
-    <header>
-      <h1>Balancing Act</h1>
-    </header>
-    <main>
+    <main class= "dashboard-page">
+      <!--After week 1 steps were completed, I moved the header under the main section since this will be changed with each switch between 'pages' via the nav bar events. This meant that I also had to adjust the CSS properties for the header since it is now nested under main vs. being a sibling.-->
+      <header>
+        <h1>Balancing Act</h1>
+      </header>
       <section class="overview">
         <section class="welcome-banner">
           <h2>Welcome, Oscar!</h2>
@@ -68,9 +71,9 @@
           </div>
         </section>
       </section>
-      <section class="transactions">
-        <div class="transactions-titles">
-          <h2 class= "transactions-name">Recent Transactions</h2>
+      <section class="dashboard-transactions">
+        <div class="dashboard-transactions-titles">
+          <h2 class= "dashboard-transactions-name">Recent Transactions</h2>
           <button class= "new-transaction-button">New Transaction</button>
         </div>
         <table>
@@ -134,8 +137,22 @@
             <td>-</td>
             <td>$6.00</td>
           </tr>
-        </section>
+        </table>
+      </section>
+    </main>
+    <main class= "transactions-page hide-page">
+      <h1>Work in Progress</h1>
+    </main>
+    <main class= "profile-page hide-page">
+      <h1>Work in Progress</h1>
     </main>
     <script src="main.js"> </script>
   </body>
 </html>
+
+
+
+
+<!--The old main that I had built will need to have a class assigned to it (perhaps "dashboard"?) and then below that and above script add in a new main with the class transactions - this means I need to edit the classes of the dashboard main - right side transactional view. Change that from being just transactions to dashboard-transactions-[whatever] to better clarify.
+
+WHY I'm approaching it this way: it makes more sense to me to keep all of my HTML in my single HTML file. While we learned that we can add/remove/change HTML with JavaScript, the amount of code that I need to add for this change in view is a lot, and I think that could make my JavaScript code more difficult to read/debug. Also my mind wants to learn towards 'toggling/switching' between the two main views, and possibily three with the profile icon. I like knowing that all the code is there, but that the eventListener I am adding with JavaScript is doing the magic of turning one HTML code on and others off.  -->
