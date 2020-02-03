@@ -56,7 +56,7 @@ function moveToTransactions() {
 
 profileIcon.addEventListener('click',moveToProfile);
 
-function moveToTransactions() {
+function moveToProfile() {
   dashboardIcon.classList.remove('highlight-border');
   transactionsIcon.classList.remove('highlight-border');
   profileIcon.classList.add('highlight-border');
