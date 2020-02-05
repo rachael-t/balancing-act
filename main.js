@@ -14,16 +14,9 @@ function remove() {
 }
 
 //interpretation of user story:
-// the hover in the css for the clipboard will need to be removed - it should just chill there indicating to the user that they are at that page that the icon represents. so with this new user story we are having the user click on the wallet and then 'move' to that new transactions page.
+// the user clicks on the wallet and then 'moves' to that new transactions page.
 //with that one click, the side bar changes location, old page goes away, new page appears
 //old main will have a class of dashboard and the new main will have a class of transactions to better align with the comp and user story.
-
-//the how:
-//for the nav bar: declare all three variables, add event listeners for click on each, and then I think I want to do three functions - one that removes the bar for two and adds to one and repeat for each bar.
-//for the content change: declare variable for each "main section", add event listeners for each (right now just dashboard and transactions), then add a function that has it when the wallet/transactions button is clicked, main-dashboard is removed and main-transactions appears.
-
-//another option. have two functions. one is just encompassing what happens when dashboard is clicked (remove the sidebar for transactions and profile add to dashboard, then show main-dashboard and hide main-transactions) and another for what happens when transactions is clicked (remove the sidebar for bashboard and profile and add to transactions, then hide main-dashboard and show main-transactions)
-//THIS IS WHAT I DECIDED TO GO WITH TO BE "DRY"
 
 var dashboardIcon = document.querySelector('.nav-dashboard');
 var transactionsIcon = document.querySelector('.nav-transactions');

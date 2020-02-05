@@ -65,7 +65,7 @@ h1 {
   font-size: 1.75em;
 }
 
-/* main page */
+/* dashboard page */
 main {
   position: relative;
   width: 90%;
@@ -86,7 +86,7 @@ button {
   text-transform: uppercase;
 }
 
-/* left side section of main page */
+/* left side section of dashboard page */
 .overview {
   display: inline-block;
   vertical-align: top;
@@ -229,7 +229,7 @@ p.account-type {
   margin-right: 0%;
 }
 
-/* right side section of main page */
+/* right side section of dashboard page */
 .dashboard-transactions {
   position: absolute;
   display: inline-block;
@@ -286,6 +286,95 @@ th {
 
 th.payee-column {
   padding-right: 20%;
+}
+
+.transactions-header {
+  position: relative;
+  width: 620px;
+  height: 60px;
+}
+
+.all-button {
+  position: absolute;
+  margin-left: 325px;
+}
+
+.inflow-button {
+  position: absolute;
+  margin-left: 385px;
+}
+
+.outflow-button {
+  position: absolute;
+  margin-left: 470px;
+}
+
+
+/* transactions page */
+.transactions-detailed {
+  /* position: absolute; */
+  /* display: inline-block;
+  width: 47%;
+  vertical-align: top; */
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+/* pulling from top to review what isn't needed - delete later
+.overview {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin-left: 1%;
+  margin-right: 5%;
+} */
+
+.transactions-detailed-table {
+    /* width: 90%; */
+    margin-top: 5%;
+    /* margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-spacing: 0px; */
+}
+
+.new-transaction {
+  position: absolute;
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+.new-transaction-header {
+  text-align: center;
+}
+
+.transactions-form {
+  width: 70%;
+  height: 50%;
+  margin-block-end: 0px;
+  margin-inline-start: 15%;
+}
+
+.log-expense-button {
+    display: block;
+    margin-top: 5%%;
+    margin-bottom: 5%;
+}
+
+h4 {
+  margin: 0px 0px;
+}
+
+.transaction-type-input, .category-input, .account-input, .payee-input, .outflow-input, .category-text-input {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 5%;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.05);
 }
 
 /* JS add-ons --- QUESTION: should I move each part to the section of the code it impacts? Or should I have it be a lower, seperate section for JS? */

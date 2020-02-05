@@ -141,7 +141,152 @@
       </section>
     </main>
     <main class= "transactions-page hide-page">
-      <h1>Work in Progress</h1>
+      <header class = "transactions-header">
+        <h1>Transactions</h1>
+        <button class="all-button">All</button>
+        <button class="inflow-button">Inflow</button>
+        <button class="outflow-button">Manage Accounts</button>
+      </header>
+      <section class= "overview transactions-detailed">
+        <table class= "transactions-detailed-table">
+          <tr>
+            <th>Date</th>
+            <th>Account</th>
+            <th>Payee</th>
+            <th>Inflow</th>
+            <th>Outflow</th>
+          </tr>
+          <tr>
+            <td>10-25-19</td>
+            <td>Credit Card</td>
+            <td>Target</td>
+            <td>-</td>
+            <td>$82.35</td>
+          </tr>
+          <tr>
+            <td>10-24-19</td>
+            <td>Credit Card</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>10-22-19</td>
+            <td>Checking</td>
+            <td>Paycheck</td>
+            <td>$1,319.12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>10-21-19</td>
+            <td>Credit Card</td>
+            <td>Trader Joe's</td>
+            <td>-</td>
+            <td>$54.92</td>
+          </tr>
+          <tr>
+            <td>10-20-19</td>
+            <td>Credit Card</td>
+            <td>Shell</td>
+            <td>-</td>
+            <td>$46.23</td>
+          </tr>
+          <tr>
+            <td>10-19-19</td>
+            <td>Savings</td>
+            <td>Rent</td>
+            <td>$800.00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>10-19-19</td>
+            <td>Checking</td>
+            <td>Hapa Sushi</td>
+            <td>-</td>
+            <td>$13.97</td>
+          </tr>
+          <tr>
+            <td>10-18-19</td>
+            <td>Credit Card</td>
+            <td>Pig Train</td>
+            <td>-</td>
+            <td>$4.83</td>
+          </tr>
+          <tr>
+            <td>10-18-19</td>
+            <td>Checking</td>
+            <td>RTD</td>
+            <td>-</td>
+            <td>$6.00</td>
+          </tr>
+          <tr>
+            <td>10-24-19</td>
+            <td>Checking</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>10-24-19</td>
+            <td>Checking</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>10-24-19</td>
+            <td>Checking</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>10-24-19</td>
+            <td>Checking</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+          <tr>
+            <td>10-24-19</td>
+            <td>Checking</td>
+            <td>Express</td>
+            <td>-</td>
+            <td>$212.24</td>
+          </tr>
+        </table>
+      </section>
+      <section class= "new-transaction">
+        <h2 class="new-transaction-header">New Transaction</h2>
+        <form class="transactions-form">
+           <h4>Type of Transaction:</h4>
+           <select class="transaction-type-input">
+             <option>Expense</option>
+             <option>Income</option>
+           </select>
+           <h4>Category:</h4>
+           <select class="category-input">
+             <option value="" disabled selected>- Select One -</option>
+             <option>Food</option>
+             <option>Bills</option>
+             <option>Fun</option>
+           </select>
+           <h4>Account from:</h4>
+           <select class="account-input">
+             <option value="" disabled selected>- Select One -</option>
+             <option>Checking</option>
+             <option>Savings</option>
+             <option>Credit Card</option>
+           </select>
+           <h4>Payee:</h4>
+           <input type="text" class="payee-input">
+           <h4>Outflow:</h4>
+           <input type="text" class="outflow-input">
+           <h4>Category:</h4>
+           <input type="text" class="category-text-input">
+         <button class="log-expense-button">Log Expense</button>
+       </form>
+      </section>
     </main>
     <main class= "profile-page hide-page">
       <h1>Work in Progress</h1>
