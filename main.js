@@ -6,26 +6,32 @@
 
 var closeWindow = document.querySelector('.welcome-banner');
 var closeButton = document.querySelector('.close-box');
-
-closeButton.addEventListener('click',remove);
-
-function remove() {
-  closeWindow.classList.add('hide-welcome');
-}
-
-//interpretation of user story:
-// the user clicks on the wallet and then 'moves' to that new transactions page.
-//with that one click, the side bar changes location, old page goes away, new page appears
-//old main will have a class of dashboard and the new main will have a class of transactions to better align with the comp and user story.
-
 var dashboardIcon = document.querySelector('.nav-dashboard');
 var transactionsIcon = document.querySelector('.nav-transactions');
 var profileIcon = document.querySelector('.nav-profile');
 var dashboardPage = document.querySelector('.dashboard-page');
 var transactionsPage = document.querySelector('.transactions-page');
 var profilePage = document.querySelector('.profile-page');
+var navBar = document.querySelector('.nav-list');
 
-dashboardIcon.addEventListener('click',moveToDashboard);
+
+closeButton.addEventListener('click',remove);
+navBar.addEventListener('click', movePage);
+
+
+function remove() {
+  closeWindow.classList.add('hide-welcome');
+}
+
+function movePage(event){
+  if (event.target.classList.contains('nav-icon-dashboard')) {
+    moveToDashboard();
+  } else if (event.target.classList.contains('nav-icon-transactions')) {
+    moveToTransactions();
+  } else if (event.target.classList.contains('nav-icon-profile')) {
+    moveToProfile();
+  }
+}
 
 function moveToDashboard() {
   dashboardIcon.classList.add('highlight-border');
@@ -36,8 +42,6 @@ function moveToDashboard() {
   profilePage.classList.add('hide-page');
 }
 
-transactionsIcon.addEventListener('click',moveToTransactions);
-
 function moveToTransactions() {
   dashboardIcon.classList.remove('highlight-border');
   transactionsIcon.classList.add('highlight-border');
@@ -46,8 +50,6 @@ function moveToTransactions() {
   transactionsPage.classList.remove('hide-page');
   profilePage.classList.add('hide-page');
 }
-
-profileIcon.addEventListener('click',moveToProfile);
 
 function moveToProfile() {
   dashboardIcon.classList.remove('highlight-border');
